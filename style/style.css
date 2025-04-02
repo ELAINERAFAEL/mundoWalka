@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5A7386; /* ou qualquer outra cor que combine com a imagem */
+}
+
+header {
+    padding-top: 5%;
+}
+
+header img {
+    display: block;
+    width: 90vw; /* Faz a imagem ocupar toda a largura da tela */
+    height: auto;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.capa {
+    display: block;
+    width: 90vw; /* Faz a imagem ocupar toda a largura da tela */
+    height: auto;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
