@@ -1,11 +1,23 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #7A9BB2;
+    --cor1: #5A7386;
+    --cor2: #24445c;
+    --cor3: #6B4226;
+    --cor4: #7A1F1F;
+    --cor5: #EAEAEA;
+    --cor6: #1C1C1C;
+}
+
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #5A7386; /* ou qualquer outra cor que combine com a imagem */
+    background-color: var(--cor1); /* ou qualquer outra cor que combine com a imagem */
 }
 
 header {
@@ -27,8 +39,26 @@ header img {
     width: 90vw; /* Faz a imagem ocupar toda a largura da tela */
     height: auto;
     margin: auto;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+}
+
+.menu img {
+    width: 12vw;
+}
+
+.menu {
+    width: 90vw;
+    margin: auto;
+    background-color: var(--cor2);
+}
+
+article {
+    width: 90vw;
+    margin: auto;
+    background-color: var(--cor5);
+}
+
+footer {
+    padding-top: 5%;
 }
 
 
