@@ -11,17 +11,24 @@
 
     <header>
         <img src="../img/header.png" alt="Cabeçalho"/>
+        
+        <nav class="menu">
+            <img src="../img/Logo.png" alt="Logo" />
+    
+            <div class="menuLink">
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Galeria de Fotos</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Jogar</a>
+                </ul>
+            </div>   
+
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button> <!-- botão hambúrguer -->         
+        </nav>
     </header>
-
-    <nav class="menu">
-        <img src="../img/Logo.png" alt="Logo" />
-        <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Galeria de Fotos</a>
-        <a href="#">Contato</a>
-        <a href="#">Jogar</a>
-    </nav>
-
+    
     <main>
         <img class="capa" src="../img/capa.png" alt="Capa" />
 
@@ -43,6 +50,16 @@
             Se você curte um estilo medieval, gráficos em pixel art e batalhas eletrizantes, conheça Walka! Mergulhe nessa aventura e divirta-se sem parar com a gente!
         </article>
     </main>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('.menu ul');
+      
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('ativo');
+        });
+      </script>
+      
     
     <footer>Desenvolvido por <a href="https://github.com/ELAINERAFAEL" target="_blank">Elaine Rafael</a></footer>
     
