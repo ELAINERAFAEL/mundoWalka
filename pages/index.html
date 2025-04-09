@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Walkat</title>
     <link rel="shortcut icon" href="../img/icon.png" type="image">
     <link rel="stylesheet" href="../style/style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Jacquard+12&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
     <header>
         <img src="../img/header.png" alt="Cabeçalho"/>
         
@@ -35,19 +41,21 @@
         <article>
             <h1>Walka</h1>
 
-            <p>Walka é um jogo de ação e estratégia onde o objetivo principal é derrotar um inimigo que se movimenta constantemente de um lado para o outro. Os jogadores terão a oportunidade de enfrentar esse adversário, utilizando suas habilidades e armas para derrotá-lo. A cada vitória, o jogo oferece uma sensação de conquista, desafiando os jogadores a aprimorar suas táticas e se tornar cada vez mais habilidosos.</p>
+            <p>Walka é um jogo de ação e estratégia onde o objetivo principal é derrotar um inimigo que se movimenta constantemente de um lado para o outro.</p>
+            <p>Os jogadores terão a oportunidade de enfrentar esse adversário, utilizando suas habilidades e armas para derrotá-lo.</p>
 
-            <ul>
-                <li>1º - <abbr title="Pegue seu martelo">Prepare-se</abbr></li>
-                <li>2º - <abbr title="Vigie seu caminho">Atenção</abbr></li>
-                <li>3º - <abbr title="Evite os obstáculos">Cuidado</abbr></li>
-                <li>4º - <abbr title="Derrote seu INIMIGO!">LUTE</abbr></li>
-            </ul>
+            <div class="etapas">
+                <abbr title="Pegue sua arma"><img src="../img/preparese.png" alt="Ícone Pegue sua arma" /></abbr>
+                <abbr title="Vigie seu caminho"><img src="../img/atencao.png" alt="Ícone Vigie seu caminho" /></abbr>
+                <abbr title="Evite os obstáculos"><img src="../img/cuidado.png" alt="Ícone Evite os obstáculos" /></abbr>
+                <abbr title="Derrote seu INIMIGO!"><img src="../img/lute.png" alt="Ícone Derrote seu INIMIGO!" /></abbr>
+            </div>
             
+            <p>A cada vitória, o jogo oferece uma sensação de conquista, desafiando os jogadores a aprimorar suas táticas e se tornar cada vez mais habilidosos.</p>
 
-            [foto]
+            <img class="jogo" src="../img/jogo.png" alt="Ilustração do Jogo" />
 
-            Se você curte um estilo medieval, gráficos em pixel art e batalhas eletrizantes, conheça Walka! Mergulhe nessa aventura e divirta-se sem parar com a gente!
+            <p>Se você curte um estilo medieval, gráficos em pixel art e batalhas eletrizantes, conheça Walka! Mergulhe nessa aventura e divirta-se sem parar com a gente!</p>
         </article>
     </main>
 
@@ -58,10 +66,10 @@
         toggle.addEventListener('click', () => {
           menu.classList.toggle('ativo');
         });
-      </script>
+    </script>
       
     
-    <footer>Desenvolvido por <a href="https://github.com/ELAINERAFAEL" target="_blank">Elaine Rafael</a></footer>
+    <footer><p>Desenvolvido por <a href="https://github.com/ELAINERAFAEL" target="_blank">Elaine Rafael</a></p></footer>
     
 </body>
 </html>
