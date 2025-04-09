@@ -31,7 +31,7 @@ font-style: normal;
     --font1: Helvetica, sans-serif;
     --font2: "Oldenburg";
 
-    --tamanhopadrao: 80vw;
+    --tamanhopadrao: 70vw;
 }  
 
 * {
@@ -41,14 +41,17 @@ font-style: normal;
 
 body {
     background-color: var(--cor1); 
+    padding-top: 5%;
 }
 
 header {
-    padding-top: 5%;
     display: grid;
     grid-template-rows: 1fr 2fr;
     width: var(--tamanhopadrao);
     margin: auto;
+    background-color: var(--cor0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 header img {
@@ -90,6 +93,7 @@ header img {
     text-decoration: none;
     color: var(--cor5);
     padding: 2%;
+    font-size: 2vw;
 }
 
 .menuLink a:hover {
@@ -106,7 +110,7 @@ display: none;
 @media (max-width: 768px) {
 
     :root {
-        --tamanhopadrao: 85vw;
+        --tamanhopadrao: 75vw;
     }
 
     .menu {
@@ -138,6 +142,10 @@ display: none;
         margin: auto;
     }
 
+    .menuLink a {
+        font-size: 2vw;
+    }
+
     .menuLink a:hover {
         color: var(--cor4);
         background-color: var(--cor5);
@@ -160,20 +168,68 @@ display: none;
 @media (max-width: 668px) {
 
     :root {
-        --tamanhopadrao: 90vw;
+        --tamanhopadrao: 80vw;
     }
 }
 
 @media (max-width: 568px) {
 
     :root {
-        --tamanhopadrao: 95vw;
+        --tamanhopadrao: 85vw;
     }
+}
+
+@media (max-width: 468px) {
+
+    :root {
+        --tamanhopadrao: 100vw;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    header {
+        padding: 0;
+        background-color: var(--cor0);
+    }
+
+    header img {
+        margin: 0;
+    }
+
+    .menu img{
+        width: 20vw;
+    }
+
+    .menuLink a {
+        font-size: 4vw;
+    }
+
+    .menu ul {
+        top: 26vw;
+    }
+
+    article {
+        border-radius: 0;
+    }
+
+    article h1 {
+        font-size: 10vw;
+    }
+
+    article p{
+        font-size: 4vw;
+    }
+
 }
 
 main {
     width: var(--tamanhopadrao);
     margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--cor5);
 }
 
 .capa {
@@ -188,10 +244,10 @@ article {
     margin: auto;
     background-color: var(--cor5);
     padding-bottom: 3vw;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     z-index: 1;
     position: relative;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 h1 {
@@ -199,17 +255,18 @@ h1 {
     padding: 2vw;
     padding-top: 3vw;
     text-align: center;
-    font-size: 8vw;
+    font-size: 7vw;
     color: var(--cor3);
 }
 
 p {
     font-family: var(--font1);
     text-align: justify;
-    font-size: 3vw;
+    font-size: 2vw;
     padding-left: 2vw;
     padding-right: 2vw;
     margin-bottom: 3vw;
+    color: var(--cor6);
 }
 
 .etapas {
@@ -261,16 +318,16 @@ footer a {
     color: var(--cor5);
 }
 
-/* Imagem que sobe pra aparecer atrás da área branca */
+
 footer::before {
 content: "";
 position: absolute;
-top: -25vw; /* quanto mais negativo, mais ela "sobe" atrás da parte branca */
+top: -25vw; 
 left: 0;
 width: 100%;
-height: 40vw; /* deve cobrir o footer + o pedaço que vai "subir" */
+height: 40vw;
 background-image: url('../img/footer.png');
 background-size: cover;
 background-repeat: repeat-x;
-z-index: -1; /* faz a imagem ir pra trás da parte branca */
+z-index: -1; 
 }
