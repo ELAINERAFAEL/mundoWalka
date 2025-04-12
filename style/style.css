@@ -263,6 +263,15 @@ h1 {
     color: var(--cor3);
 }
 
+h2 {
+    font-family: var(--font2);
+    padding: 2vw;
+    padding-top: 3vw;
+    text-align: center;
+    font-size: 7vw;
+    color: var(--cor3);
+}
+
 p {
     font-family: var(--font1);
     text-align: justify;
