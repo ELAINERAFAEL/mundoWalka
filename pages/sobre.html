@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre o MW</title>
+    <title>Mundo Walkat</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image">
     <link rel="stylesheet" href="../style/style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Jacquard+12&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <header>
+        <img src="../img/header.png" alt="Cabeçalho"/>
+        
+        <nav class="menu">
+            <a href="index.html"><img src="../img/Logo.png" alt="Logo" /></a>
+    
+            <div class="menuLink">
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="contato">Contato</a>
+                    <a href="jogo.html">Jogar</a>
+                </ul>
+            </div>   
+
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button> <!-- botão hambúrguer -->         
+        </nav>
+    </header>
+    
+    <main>
+        <div class="carrossel">
+            <input type="radio" name="carrossel" id="slide1" checked>
+            <input type="radio" name="carrossel" id="slide2">
+            <input type="radio" name="carrossel" id="slide3">
+            <input type="radio" name="carrossel" id="slide4">
+          
+            <div class="slides">
+              <div class="slide">
+                <img src="../img/img01.jpeg" alt="Imagem 1">
+                <label for="slide3" class="nav-button prev">&#10094;</label>
+                <label for="slide2" class="nav-button next">&#10095;</label>
+              </div>
+
+              <div class="slide">
+                <img src="../img/img02.jpeg" alt="Imagem 2">
+                <label for="slide1" class="nav-button prev">&#10094;</label>
+                <label for="slide3" class="nav-button next">&#10095;</label>
+              </div>
+
+              <div class="slide">
+                <img src="../img/img03.jpeg" alt="Imagem 3">
+                <label for="slide2" class="nav-button prev">&#10094;</label>
+                <label for="slide4" class="nav-button next">&#10095;</label>
+              </div>
+              
+              <div class="slide">
+                <img src="../img/img04.jpeg" alt="Imagem 4">
+                <label for="slide3" class="nav-button prev">&#10094;</label>
+                <label for="slide1" class="nav-button next">&#10095;</label>
+              </div>
+            </div>
+          
+            <div class="passar">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+            </div>
+          </div>
+
+        <article>
+            <h1>Walka</h1>
+
+            <p>O <strong>"Mundo Walka"</strong> representa toda a simbologia e o estilo característico de <strong>Walka</strong> que inspiraram este jogo!</p>
+
+            <p>Em polonês, a palavra <strong>"Walka"</strong> significa <strong>"luta"</strong>, que é justamente o objetivo principal do jogo.</p>
+
+            <p>Além do significado do nome, o projeto <strong>Mundo Walka</strong> apresenta um estilo medieval nórdico, complementado pela paleta de cores "Inverno Nórdico" e por um logotipo inspirado nas características e nas cores da bandeira da Polônia.</p>
+
+            <p><strong>Walka</strong> é um jogo de ação e estratégia onde o objetivo principal é derrotar um inimigo que se movimenta constantemente de um lado para o outro.</p>
+            <p>Os jogadores terão a oportunidade de enfrentar esse adversário, utilizando suas habilidades e armas para derrotá-lo.</p>
+            
+            <div class="etapas">
+                <abbr title="Pegue sua arma"><img src="../img/preparese.png" alt="Ícone Pegue sua arma" /></abbr>
+                <abbr title="Vigie seu caminho"><img src="../img/atencao.png" alt="Ícone Vigie seu caminho" /></abbr>
+                <abbr title="Evite os obstáculos"><img src="../img/cuidado.png" alt="Ícone Evite os obstáculos" /></abbr>
+                <abbr title="Derrote seu INIMIGO!"><img src="../img/lute.png" alt="Ícone Derrote seu INIMIGO!" /></abbr>
+            </div>
+            
+            <p>A cada vitória, o jogo oferece uma sensação de conquista, desafiando os jogadores a aprimorar suas táticas e se tornar cada vez mais habilidosos.</p>
+
+            <img class="jogo" src="../img/jogo.png" alt="Ilustração do Jogo" />
+
+            <p>Se você curte um estilo medieval, gráficos em pixel art e batalhas eletrizantes, conheça <strong>Walka</strong>! Mergulhe nessa aventura e divirta-se sem parar com a gente!</p>
+
+            <div class="botao"><a href="jogo.html">Jogar</a></div>
+        </article>
+    </main>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('.menu ul');
+      
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('ativo');
+        });
+    </script>
+      
+    
+    <footer>
+        <p>Desenvolvido por Elaine Rafael</p>
+
+        <div>
+            <br>
+            <a href="https://www.instagram.com/laininhaa_rafael?igsh=MXN2ZHp0dHYyaGg1OQ==" target="_blank"><img src="../img/instaagran.png" alt="Link do instaagran" /></a>
+
+            <a href="https://github.com/ELAINERAFAEL" target="_blank"><img src="../img/github.png" alt="Link do github" /></a>
+        </div>
+    </footer>
     
 </body>
 </html>

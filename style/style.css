@@ -113,6 +113,10 @@ display: none;
         --tamanhopadrao: 75vw;
     }
 
+    header img {
+        border-radius: 0;
+    }
+
     .menu {
         display: grid;
         grid-template-columns: 2fr 9fr 1fr;
@@ -316,6 +320,97 @@ abbr {
     border-radius: 10px;
     margin-bottom: 3vw;
 }
+
+/* ------- Carrossel -------*/
+.carrossel {
+    position: relative;
+    width: var(--tamanhopadrao);
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .slides {
+    display: flex;
+    width: var(--tamanhopadrao);
+    transition: transform 0.5s ease;
+  }
+
+  .slide {
+    width: var(--tamanhopadrao);
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .slide img {
+    width: var(--tamanhopadrao);
+    object-fit: cover;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  /* Navegação por bolinhas */
+  .passar {
+    position: absolute;
+    bottom: 5vw;
+    left: 38vw;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5vw;
+  }
+
+  .passar label {
+    width: 2vw;
+    height: 2vw;
+    background-color: var(--cor0);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Botões de anterior/próximo */
+  .nav-button {
+    position: absolute;
+    top: 40vw;
+    transform: translateY(-50%);
+    background-color: var(--cor1);
+    color: var(--cor5);
+    padding: 1vw 3vw;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1;
+    border-radius: 5px;
+    user-select: none;
+  }
+
+  .nav-button:hover {
+    background-color: var(--cor0);
+    color: var(--cor2);
+  }
+
+  .prev {
+    left: 2vw;
+  }
+
+  .next {
+    right: 2vw;
+  }
+
+  /* Transições de slides */
+  #slide1:checked ~ .slides { transform: translateX(0%); }
+  #slide2:checked ~ .slides { transform: translateX(-100%); }
+  #slide3:checked ~ .slides { transform: translateX(-200%); }
+  #slide4:checked ~ .slides { transform: translateX(-300%); }
+
+  /* Bolinha ativa */
+  #slide1:checked ~ .passar label[for="slide1"],
+  #slide2:checked ~ .passar label[for="slide2"],
+  #slide3:checked ~ .passar label[for="slide3"],
+  #slide4:checked ~ .passar label[for="slide4"] {
+    background-color: var(--cor6);
+  }
+/* ------- Carrossel -------*/
 
 footer {
     position: relative;
