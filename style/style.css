@@ -269,6 +269,27 @@ p {
     color: var(--cor6);
 }
 
+.botao {
+    display: block;
+    text-align: center;
+    margin: 3vw;
+}
+
+.botao a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font0);
+    font-size: 2vw;
+    color: var(--cor5);
+    background-color: var(--cor3);
+    border-radius: 10px;
+    padding: 2vw;
+}
+
+.botao a:hover {
+    background-color: var(--cor2);
+}
+
 .etapas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -305,7 +326,7 @@ footer {
 }
 
 footer p {
-    padding-top: 5vw;
+    padding-top: 2vw;
     font-family: var(--font2);
     color: var(--cor5);
     font-weight: bold;
@@ -313,11 +334,16 @@ footer p {
     text-align: center;
 }
 
-footer a {
-    text-decoration: none;
-    color: var(--cor5);
+footer div {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    text-align: center;
+    margin-top: 3vw;
 }
 
+footer img {
+    width: 5vw;
+}
 
 footer::before {
 content: "";
