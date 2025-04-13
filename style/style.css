@@ -482,6 +482,17 @@ button:hover {
     background-color: var(--cor4);
 }
 
+.cheia {
+    text-align: center;
+}
+
+iframe {
+    width: var(--tamanhopadrao);
+    height: var(--altura);
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
 footer {
     position: relative;
     z-index: 0;
