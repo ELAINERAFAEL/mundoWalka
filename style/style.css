@@ -32,6 +32,8 @@ font-style: normal;
     --font2: "Oldenburg";
 
     --tamanhopadrao: 70vw;
+    --tamanhoitens: 60vw;
+    --altura: 40vw;
 }  
 
 * {
@@ -111,10 +113,8 @@ display: none;
 
     :root {
         --tamanhopadrao: 75vw;
-    }
-
-    header img {
-        border-radius: 0;
+        --tamanhoitens: 65vw;
+        --altura: 45vw;
     }
 
     .menu {
@@ -130,7 +130,7 @@ display: none;
         display: none; 
         flex-direction: column;
         position: absolute; 
-        top: 21vw; 
+        top: 27vw; 
         right: 0vw;
         left: 0vw; 
         width: var(--tamanhopadrao);
@@ -167,12 +167,15 @@ display: none;
         cursor: pointer;
         color: var(--cor5);
     }
+    
 }
 
 @media (max-width: 668px) {
 
     :root {
         --tamanhopadrao: 80vw;
+        --tamanhoitens: 70vw;
+        --altura: 75vw;
     }
 }
 
@@ -180,6 +183,8 @@ display: none;
 
     :root {
         --tamanhopadrao: 85vw;
+        --tamanhoitens: 75vw;
+        --altura: 95vw;
     }
 }
 
@@ -187,6 +192,8 @@ display: none;
 
     :root {
         --tamanhopadrao: 100vw;
+        --tamanhoitens: 90vw;
+        --altura: 100vw;
     }
 
     body {
@@ -268,7 +275,7 @@ h2 {
     padding: 2vw;
     padding-top: 3vw;
     text-align: center;
-    font-size: 7vw;
+    font-size: 3rem;
     color: var(--cor3);
 }
 
@@ -421,6 +428,60 @@ abbr {
   }
 /* ------- Carrossel -------*/
 
+form {
+    width: var(--tamanhopadrao);
+    text-align: center;
+    color: var(--cor5);
+}
+
+input {
+    width: var(--tamanhoitens);
+    background-color: var(--cor2);
+    padding: 2vw;
+    border: none;
+    border-radius: 10px;
+    color: var(--cor5);
+    font-size: 2rem;
+    margin-top: 1vw;
+}
+
+input::placeholder {
+    color: var(--cor5);
+    font-size: 2rem;
+}
+
+textarea {
+    width: var(--tamanhoitens);
+    background-color: var(--cor2);
+    padding: 2vw;
+    border: none;
+    border-radius: 20px;
+    color: var(--cor5);
+    font-size: 2rem;
+    margin-top: 1vw;
+}
+
+textarea::placeholder {
+    color: var(--cor5);
+    font-size: 2rem;
+}
+
+button {
+    background-color: var(--cor3);
+    border: none;
+    border-radius: 10px;
+    padding: 2vw;
+    font-family: var(--font2);
+    font-size: 2rem;
+    color: var(--cor5);
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+}
+
+button:hover {
+    background-color: var(--cor4);
+}
+
 footer {
     position: relative;
     z-index: 0;
@@ -455,9 +516,10 @@ position: absolute;
 top: -25vw; 
 left: 0;
 width: 100%;
-height: 40vw;
+height: var(--altura);
 background-image: url('../img/footer.png');
 background-size: cover;
 background-repeat: repeat-x;
 z-index: -1; 
+bottom: 0;
 }
