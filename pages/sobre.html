@@ -5,21 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Walkat</title>
-    <link rel="shortcut icon" href="../img/icon.png" type="image">
-    <link rel="stylesheet" href="../style/style.css" >
+    <link rel="shortcut icon" href="../img/icon.png" type="image"><!-- Ícone da página -->
+    <link rel="stylesheet" href="../style/style.css" ><!-- CSS da página -->
+
+    <!-- Importação das fontes do google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Jacquard+12&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+    <!-- Terminado importação das fontes do google -->
 </head>
 
 <body>
     <header>
-        <img src="../img/header.png" alt="Cabeçalho"/>
+        <img src="../img/header.png" alt="Cabeçalho"/><!-- Imagem acima do cabeçalho -->
         
         <nav class="menu">
-            <a href="index.html"><img src="../img/Logo.png" alt="Logo" /></a>
+            <a href="index.html"><img src="../img/Logo.png" alt="Logo" /></a><!-- Logo -->
     
             <div class="menuLink">
                 <ul>
@@ -35,13 +38,13 @@
     </header>
     
     <main>
-        <div class="carrossel">
+        <div class="carrossel"><!-- Carrosel de imagens -->
             <input type="radio" name="carrossel" id="slide1" checked>
             <input type="radio" name="carrossel" id="slide2">
             <input type="radio" name="carrossel" id="slide3">
             <input type="radio" name="carrossel" id="slide4">
           
-            <div class="slides">
+            <div class="slides"><!-- Cada div slide é uma imagem -->
               <div class="slide">
                 <img src="../img/img01.jpeg" alt="Imagem 1">
                 <label for="slide3" class="nav-button prev">&#10094;</label>
@@ -67,7 +70,7 @@
               </div>
             </div>
           
-            <div class="passar">
+            <div class="passar"> <!-- Bolinhas -->
               <label for="slide1"></label>
               <label for="slide2"></label>
               <label for="slide3"></label>
@@ -87,7 +90,7 @@
             <p><strong>Walka</strong> é um jogo de ação e estratégia onde o objetivo principal é derrotar um inimigo que se movimenta constantemente de um lado para o outro.</p>
             <p>Os jogadores terão a oportunidade de enfrentar esse adversário, utilizando suas habilidades e armas para derrotá-lo.</p>
             
-            <div class="etapas">
+            <div class="etapas"><!-- abbr esconte o texto, ele aparece quando passa a imagem -->
                 <abbr title="Pegue sua arma"><img src="../img/preparese.png" alt="Ícone Pegue sua arma" /></abbr>
                 <abbr title="Vigie seu caminho"><img src="../img/atencao.png" alt="Ícone Vigie seu caminho" /></abbr>
                 <abbr title="Evite os obstáculos"><img src="../img/cuidado.png" alt="Ícone Evite os obstáculos" /></abbr>
@@ -104,6 +107,7 @@
         </article>
     </main>
 
+    <!-- Script do menu hamburguer -->
     <script>
         const toggle = document.getElementById('menu-toggle');
         const menu = document.querySelector('.menu ul');
@@ -117,7 +121,7 @@
     <footer>
         <p>Desenvolvido por Elaine Rafael</p>
 
-        <div>
+        <div><!-- Logos com links do perfil no github e instagran -->
             <br>
             <a href="https://www.instagram.com/laininhaa_rafael?igsh=MXN2ZHp0dHYyaGg1OQ==" target="_blank"><img src="../img/instaagran.png" alt="Link do instaagran" /></a>
 
